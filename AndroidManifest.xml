@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gmail.jfeingold35.easydoseit"
+    android:versionCode="2"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <supports-screens android:smallScreens="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.gmail.jfeingold35.easydoseit.MedListActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gmail.jfeingold35.easydoseit.MedDetailActivity"
+            android:label="@string/title_med_detail"
+            android:parentActivityName="com.gmail.jfeingold35.easydoseit.MedListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MedListActivity" />
+        </activity>
+
+        <provider
+            android:name="com.gmail.jfeingold35.easydoseit.medprovider.MedProvider"
+            android:authorities="com.gmail.jfeingold35.easydoseit.medprovider"
+            android:exported="false" >
+        </provider>
+        <provider
+            android:name="com.gmail.jfeingold35.easydoseit.alarmprovider.AlarmProvider"
+            android:authorities="com.gmail.jfeingold35.easydoseit.alarmprovider"
+            android:exported="false" >
+        </provider>
+
+        <activity
+            android:name="com.gmail.jfeingold35.easydoseit.NewMedActivity"
+            android:label="@string/title_new_med"
+            android:parentActivityName="com.gmail.jfeingold35.easydoseit.MedListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MedListActivity" />
+        </activity>
+
+        <receiver android:name="com.gmail.jfeingold35.easydoseit.receivers.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.gmail.jfeingold35.easydoseit.services.AlarmSetupService" />
+
+        <activity
+            android:name="com.gmail.jfeingold35.easydoseit.RefillAlarmActivity"
+            android:label="@string/title_activity_refill_alarm" >
+        </activity>
+        <activity
+            android:name="com.gmail.jfeingold35.easydoseit.DailyAlarmActivity"
+            android:label="@string/title_activity_daily_alarm" >
+        </activity>
+        <activity
+            android:name="com.gmail.jfeingold35.easydoseit.RefillMedActivity"
+            android:label="@string/title_activity_refill_med" >
+        </activity>
+        <activity
+            android:name="com.gmail.jfeingold35.easydoseit.settings.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/SettingsTheme" >
+        </activity>
+        <activity
+            android:name="com.gmail.jfeingold35.easydoseit.UpdateMedActivity"
+            android:label="@string/title_activity_update_med" >
+        </activity>
+    </application>
+
+</manifest>

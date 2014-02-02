@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/action_delete_med" android:orderInCategory="4" android:title="@string/action_delete_med" android:showAsAction="ifRoom" android:icon="@drawable/ic_menu_delete"></item>
+    <item android:id="@+id/action_refill_med" android:orderInCategory="1" android:title="@string/action_refill_med" android:showAsAction="ifRoom" android:icon="@drawable/ic_menu_refill_med"></item>
+    <item android:id="@+id/action_add_alarm" android:icon="@drawable/ic_menu_add_alarm" android:title="@string/action_add_alarm" android:orderInCategory="3" android:showAsAction="ifRoom"></item>
+    <item android:id="@+id/action_settings" android:title="@string/action_settings" android:showAsAction="never" android:orderInCategory="100"></item>
+    <item android:id="@+id/action_edit_med" android:orderInCategory="2" android:title="@string/action_edit_med" android:icon="@drawable/ic_menu_edit" android:showAsAction="ifRoom"></item>
+    
+
+</menu>

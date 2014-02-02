@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <com.gmail.jfeingold35.easydoseit.settings.TimePickerPreference
+        android:title="@string/preference_refill_time"
+        android:key="@string/pref_key_alarm_time"
+        android:defaultValue="1200" />
+    <com.gmail.jfeingold35.easydoseit.settings.AlarmRingtonePreference
+        android:showDefault="true"
+        android:ringtoneType="alarm"
+        android:showSilent="false"
+        android:title="@string/preference_alarm_ringtone" 
+        android:key="@string/pref_key_alarm_ringtone"
+        android:defaultValue="@string/ringtone_default_value" />
+    <CheckBoxPreference
+        android:key="@string/pref_key_alarm_vibration" 
+        android:title="@string/preference_alarm_vibrate" 
+        android:defaultValue="true" />
+    <CheckBoxPreference
+        android:key="@string/pref_key_refills_loud"
+        android:title="@string/preference_refills_loud"
+        android:defaultValue="true" />
+</PreferenceScreen>

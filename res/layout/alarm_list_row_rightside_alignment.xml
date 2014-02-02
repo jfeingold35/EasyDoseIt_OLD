@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="right" >
+
+    <CheckBox
+        android:id="@+id/alarmCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="" />
+
+	<ToggleButton
+        android:id="@+id/ringtoneToggle"
+        style="@style/VolumeToggleTheme"
+        android:background="@drawable/volume_toggle_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+	
+    <TextView
+        android:id="@+id/alarmView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/details_default"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageButton
+        android:id="@+id/alarmEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_button_edit"
+        android:contentDescription="@string/alarm_edit_description" />
+
+    <ImageButton
+        android:id="@+id/alarmDiscard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_discard"
+        android:contentDescription="@string/alarm_discard_description" />
+
+</LinearLayout>

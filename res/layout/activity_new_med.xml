@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".NewMedActivity" >
+
+    <TextView
+        android:id="@+id/instructionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/new_med_instructions"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/instructionView"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/instructionView"
+        android:ems="10"
+        android:hint="@string/new_name_hint" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/dosageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameText"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/nameText"
+        android:ems="10"
+        android:hint="@string/new_dosage_hint" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:text="@string/button_add"
+        android:onClick="addToDB" />
+
+    <EditText
+        android:id="@+id/dateFilledText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dosageText"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/dosageText"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="@string/new_date_filled_hint" />
+
+    <EditText
+        android:id="@+id/durationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dateFilledText"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/dateFilledText"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/new_duration_hint" />
+
+    <CheckBox
+        android:id="@+id/reminderCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/durationText"
+        android:layout_below="@+id/durationText"
+        android:text="@string/reminder_checkbox"
+        android:onClick="reminderCheckboxClicked" />
+
+    <EditText
+        android:id="@+id/reminderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/reminderCheckBox"
+        android:layout_toRightOf="@+id/reminderCheckBox"
+        android:ems="10"
+        android:inputType=""
+        android:hint="@string/hint_reminder"
+        android:focusable="false"
+        android:enabled="false"
+        android:visibility="invisible" />
+
+
+
+</RelativeLayout>

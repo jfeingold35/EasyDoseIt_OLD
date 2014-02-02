@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/instructionView"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/instructionView"
+        android:ems="10"
+        android:hint="@string/new_name_hint" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/dosageEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameEdit"
+        android:layout_alignRight="@+id/nameEdit"
+        android:layout_below="@+id/nameEdit"
+        android:ems="10"
+        android:hint="@string/new_dosage_hint" />
+
+    <EditText
+        android:id="@+id/dateEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dosageEdit"
+        android:layout_alignRight="@+id/dosageEdit"
+        android:layout_below="@+id/dosageEdit"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="@string/new_date_filled_hint" />
+
+    <EditText
+        android:id="@+id/durationEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dateEdit"
+        android:layout_alignRight="@+id/dateEdit"
+        android:layout_below="@+id/dateEdit"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/new_duration_hint" />
+
+    <TextView
+        android:id="@+id/instructionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/update_med_instructions"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/reminderCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/durationEdit"
+        android:layout_below="@+id/durationEdit"
+        android:text="@string/reminder_checkbox"
+        android:onClick="reminderCheckboxClicked" />
+
+    <EditText
+        android:id="@+id/reminderEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/reminderCheckbox"
+        android:layout_toRightOf="@+id/reminderCheckbox"
+        android:ems="10"
+        android:inputType=""
+        android:focusable="false"
+        android:enabled="false"
+        android:visibility="invisible"
+        android:hint="@string/hint_reminder" />
+
+    <Button
+        android:id="@+id/updateButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/durationEdit"
+        android:layout_alignTop="@+id/reminderEdit"
+        android:text="@string/button_update"
+        android:onClick="updateMed" />
+    
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+TODO LIST:
+
+1. Alarms.
+	A. Create alarms. (COMPLETED!)
+	B. View alarms. (COMPLETED!)
+	C. Delete alarms. (COMPLETED!)
+	D. Activate/Deactivate alarms. (COMPLETED!)
+	E. Group simultaneously timed alarms into batches
+	   to avoid repetition and annoyance. (MANDATORY!)
+	F. Consider replacing the activity with a dialog. (OPTIONAL)
+	G. Consider supplementing the activity with a notification. (OPTIONAL)
+	   
+2. Meds.
+	A. Delete meds. (COMPLETED!)
+	B. Refill a med.
+		I. Create the activity to allow refills. (COMPLETED!)
+		II. Update the med in the content provider. (COMPLETED!)
+		III. Reset the refill alarm. (COMPLETED!)
+		IV. Divine a way to allow the user to set the time of day for the
+		    refill alarm. (COMPLETED!)
+	C. Edit a med. (OPTIONAL, BUT ENCOURAGED)
+
+3. Refills.
+	A. Consider supplementing the activity with a notification. (ENCOURAGED)
+	B. Consider replacing the activity with a dialog. (ENCOURAGED)
+	
+4. Receivers and Services. (COMPLETED!)
+	A. Implement boot receiver to initiate an alarm setup service. (COMPLETED!)
+	B. Implement alarm setup service to allow alarms and refills to survive
+	   a reboot. (COMPLETED!)
+	
+5. User Interface.
+	A. Test for different screens.
+		I. Small. (SOLUTION: OUTLAW SMALL SCREENS)
+			a. Landscape.
+			b. Portrait.
+		II. Normal.
+			a. Landscape. (COMPLETED!)
+			b. Portrait.
+		III. Large. (COMPLETED!)
+			a. Landscape.
+			b. Portrait.
+		IV. X-Large
+			a. Landscape.
+			b. Portrait.
+	B. Test support for tablets. 
+
+6. Settings. (COMPLETED!)
+	A. Create a settings activity, if warranted.
+	B. Consider options.
+		I. Choose the time of notification for refills?
+		II. Choose between notification, activity, or both?
+		
+7. Cleanup. (COMPLETED!)
+	A. Remove all outstanding Toasts.
+	B. Remove all outstanding TODOS.
+
+8. Beta.
+	A. Post on Facebook asking for volunteers.
+	B. Talk to Randy, George. (Joey?)
+
+9. PUBLISH!

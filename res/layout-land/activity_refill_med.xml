@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/instructionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/refill_med_instructions"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/instructionView"
+        android:layout_marginTop="13dp"
+        android:freezesText="true"
+        android:text="@string/details_default"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/dosageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/nameView"
+        android:text="@string/details_default"
+        android:freezesText="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/dateFilledText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/instructionView"
+        android:layout_below="@+id/dosageView"
+        android:hint="@string/new_date_filled_hint"
+        android:ems="10"
+        android:inputType="date" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/durationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/dateFilledText"
+        android:layout_below="@+id/dateFilledText"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="@string/new_duration_hint"
+        android:inputType="number" />
+
+    <CheckBox
+        android:id="@+id/reminderCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/durationText"
+        android:text="@string/reminder_checkbox"
+        android:onClick="reminderCheckboxClicked" />
+
+    <EditText
+        android:id="@+id/reminderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/reminderCheckBox"
+        android:layout_toRightOf="@+id/reminderCheckBox"
+        android:ems="10"
+        android:inputType=""
+        android:hint="@string/hint_reminder"
+        android:focusable="false"
+        android:visibility="invisible"
+        android:enabled="false" />
+
+    <Button
+        android:id="@+id/refillButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/durationText"
+        android:layout_alignTop="@+id/reminderText"
+        android:text="@string/button_refill" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Easy Dose it</string>
+    <string name="title_med_detail">Med Detail</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_add_med">Add New Med</string>
+    <string name="list_empty_meds">No meds. You should add some!</string>
+    <string name="title_activity_new_med">NewMedActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_new_med">Add a Medication</string>
+    <string name="new_name_hint">Name (e.g., Ritalin, Ritalin 10 mg)</string>
+    <string name="new_dosage_hint">Dosage (e.g., 10 mg, 2 pills)</string>
+    <string name="new_med_instructions">To add a medication, enter the information and press \'Add\'.</string>
+    <string name="button_add">Add</string>
+    <string name="title_med_list">Meds</string>
+    <string name="details_default">Default</string>
+    <string name="new_date_filled_hint">Date Filled (e.g., 1/1/2001)</string>
+    <string name="new_duration_hint">Duration in days (e.g., 30, 60, 90)</string>
+    <string name="reminder_checkbox">Warn me to refill:</string>
+    <string name="hint_reminder">Days in Advance</string>
+    <string name="title_activity_refill_alarm">RefillAlarmActivity</string>
+    <string name="title_alarm">Refill Reminder</string>
+    <string name="button_dismiss">Dismiss</string>
+    <string name="button_remind_me_later">Remind me later</string>
+    <string name="reminder_header">REMINDER!</string>
+    <string name="title_activity_alarm_setup_service">AlarmSetupService</string>
+    <string name="action_delete_med">Delete This Med</string>
+    <string name="action_add_alarm">Add an Alarm</string>
+    <string name="list_empty_alarms">No alarms set for this med.</string>
+    <string name="title_activity_daily_alarm">Easy Dose It</string>
+    <string name="alarm_discard_description">Delete</string>
+    <string name="action_refill_med">Refill/Edit This Med</string>
+    <string name="title_activity_refill_med">Refill This Med</string>
+    <string name="refill_med_instructions">To refill this medication, enter the information, then press \'Refill\'.</string>
+    <string name="button_refill">Refill</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="preference_refill_time">Alarm Time for Refills</string>
+    <string name="title_refill_dialog">Set Refill Alarms For:</string>
+    <string name="preference_alarm_ringtone">Alarm Ringtone</string>
+    <string name="preference_alarm_vibrate">Vibration Enabled</string>
+    <string name="pref_key_alarm_time">pref_alarmTime</string>
+    <string name="pref_key_alarm_ringtone">pref_alarmRingtone</string>
+    <string name="pref_key_alarm_vibration">pref_vibration</string>
+    <string name="ringtone_default_value">content://settings/system/alarm_alert</string>
+    <string name="alarm_edit_description">Edit</string>
+    <string name="time_picker_title">Choose a Time</string>
+    <string name="pref_key_refills_loud">pref_refillsLoud</string>
+    <string name="preference_refills_loud">Refill Alarms Volume On</string>
+    <string name="title_activity_update_med">Edit This Med</string>
+    <string name="update_med_instructions">To edit this medication, enter the new information and press \'Update\'.</string>
+    <string name="button_update">Update</string>
+    <string name="action_edit_med">Edit This Med</string>
+
+</resources>

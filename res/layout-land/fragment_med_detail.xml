@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/alarmListView"
+        android:layout_toRightOf="@+id/nameDetailsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/dosageDetailsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameDetailsView"
+        android:layout_marginTop="14dp"
+        android:freezesText="true"
+        android:layout_marginLeft="14dp"
+        android:text="@string/details_default"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="left" />
+
+    <TextView
+        android:id="@+id/dateFilledDetailsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dosageDetailsView"
+        android:layout_marginTop="15dp"
+        android:freezesText="true"
+        android:layout_marginLeft="14dp"
+        android:text="@string/details_default"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="left" />
+
+    <TextView
+        android:id="@+id/durationDetailsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateFilledDetailsView"
+        android:layout_marginTop="19dp"
+        android:freezesText="true"
+        android:layout_marginLeft="14dp"
+        android:text="@string/details_default"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="left" />
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/durationDetailsView"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="14dp"
+        android:freezesText="true"
+        android:text="@string/list_empty_alarms"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="left" />
+
+    <TextView
+        android:id="@+id/nameDetailsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:freezesText="true"
+        android:text="@string/details_default"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="left" />
+
+</RelativeLayout>
